@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-24",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
