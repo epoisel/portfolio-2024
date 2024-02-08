@@ -1,0 +1,83 @@
+/* Bio.css */
+
+/* Add a class for the fading in animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  /* Apply this class to elements you want to fade in */
+  .profile-picture,
+  .profile-img,
+  p,
+  ion-button {
+    opacity: 1;
+  }
+  
+  .profile-picture {
+    display: flex;
+    
+    max-width: fit-content;
+    margin: 0 auto; /* Center horizontally */
+    border: 2px solid #fff; /* Add a white border */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide content outside of the circle */
+    width: 25%; 
+    height: auto; 
+  }
+  
+  .profile-img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+ 
+  
+  .bio-content {
+    text-align: left;
+  }
+  
+  .bio-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bio-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each section */
+  .bio-section {
+    margin-bottom: 20px;
+  }
+  
+  .bio-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .bio-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Styling for the "Let's connect" paragraph */
+  .bio-connect {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  ion-button:hover {
+    transform: scale(1.05); 
+  }
+  
+  ion-card {
+    max-width: 70%; 
+  
+    margin: 0 auto; 
+    padding: 2%; 
+  }

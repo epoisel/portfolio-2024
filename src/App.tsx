@@ -1,7 +1,16 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import React, { useState } from 'react';
+import { Redirect, BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {
+  IonApp,
+  IonContent,
+  IonHeader,
+  IonTitle,
+  IonToolbar, setupIonicReact
+} from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Bio from './components/Bio/Bio';
+import Contact from './components/Contact';
+import LandingPage from './components/LandingPage/LandingPage';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,19 +33,30 @@ import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+  const [showLanding, setShowLanding] = useState(true);
+
+  const handleBufferComplete = () => {
+    setShowLanding(false);
+  };
+
+  return (
+    <IonApp>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>My Portfolio</IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent>
+        {showLanding ? (
+          <LandingPage onBufferComplete={handleBufferComplete} />
+        ) : (
+          <Bio />
+        )}
+      </IonContent>
+    </IonApp>
+  );
+}
 
 export default App;
+

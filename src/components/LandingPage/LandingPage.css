@@ -1,0 +1,32 @@
+/* LandingPage.css */
+
+/* Initial styles for square and brackets */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f000;
+    cursor: pointer; 
+  transition: opacity 0.5s; /* Add a background color if needed */
+  }
+  
+ 
+  
+  ion-card-title {
+    --color: #52ffe4;
+  }
+  
+  ion-card-subtitle {
+    --color: #d1fff8;
+  }
+  
+  .logo {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.5s;
+  }
+
+  .fade-out {
+    opacity: 0;
+  }

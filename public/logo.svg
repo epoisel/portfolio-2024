@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 178">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: BebasNeue-Regular, 'Bebas Neue';
+        font-size: 61.75px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-4, .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-4" x="3" y="3" width="394" height="172"/>
+      <path class="cls-3" d="M394,6v166H6V6h388M400,0H0v178h400V0h0Z"/>
+    </g>
+    <g>
+      <text class="cls-1" transform="translate(32.73 87.63)"><tspan x="0" y="0">William</tspan></text>
+      <text class="cls-1" transform="translate(240.26 130.51)"><tspan x="0" y="0">Poisel</tspan></text>
+      <line class="cls-2" x1="175.04" y1="129.74" x2="256.51" y2="48.26"/>
+    </g>
+  </g>
+</svg>
